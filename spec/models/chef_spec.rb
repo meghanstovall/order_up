@@ -20,7 +20,7 @@ RSpec.describe Chef, type: :model do
       dish_1.ingredients << ingredient_1
       dish_1.ingredients << ingredient_2
 
-      expect(chef.ingredients).to eq([ingredient_1, ingredient_2])
+      expect(chef.ingredients).to eq([ingredient_1.name, ingredient_2.name])
     end
   end
 end
